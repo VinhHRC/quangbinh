@@ -41,11 +41,42 @@
             padding: 0;
             margin: 0;
         }
+       #title {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            color: #000;
+            font-family: Arial, sans-serif;
+        }
+        #title h1 {
+            font-size: 18px;
+            margin: 0;
+            font-weight: bold;
+        }
+        #title p {
+            font-size: 14px;
+            margin: 5px 0 0 0;
+        }
+        #visit-counter {
+            font-size: 14px;
+            margin: 5px 0 0 0;
+            color: #444;
+        }
         </style>
-        <title></title>
+        <title> Bản đồ ngập lụt khu vực tỉnh Quảng Bình </title>
+    <!-- Firebase SDK -->
+        <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.min.js"></script>
     </head>
     <body>
         <div id="map">
+            <div id="title">
+                <h1>Bản đồ ngập lụt khu vực tỉnh Quảng Bình, lũ lịch sử ngày 18/10/2020</h1>
+                <p>Hoang Duc Vinh - VinhHRC@gmail.com </p>
+                <p>Zalo 0906 682 672</p>
+               
+            </div>
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
                 <div id="popup-content"></div>
